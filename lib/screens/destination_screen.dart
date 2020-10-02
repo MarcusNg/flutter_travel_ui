@@ -141,7 +141,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                       height: 170.0,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Theme.of(context).cardColor,
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Padding(
@@ -178,7 +178,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                     Text(
                                       'per pax',
                                       style: TextStyle(
-                                        color: Colors.grey,
+                                        color: Theme.of(context).secondaryHeaderColor,
                                       ),
                                     ),
                                   ],
@@ -188,7 +188,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                             Text(
                               activity.type,
                               style: TextStyle(
-                                color: Colors.grey,
+                                color: Theme.of(context).secondaryHeaderColor,
                               ),
                             ),
                             _buildRatingStars(activity.rating),

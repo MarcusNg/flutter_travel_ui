@@ -64,7 +64,7 @@ class DestinationCarousel extends StatelessWidget {
                           height: 120.0,
                           width: 200.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Theme.of(context).cardColor,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: Padding(
@@ -84,7 +84,7 @@ class DestinationCarousel extends StatelessWidget {
                                 Text(
                                   destination.description,
                                   style: TextStyle(
-                                    color: Colors.grey,
+                                    color: Theme.of(context).secondaryHeaderColor,
                                   ),
                                 ),
                               ],

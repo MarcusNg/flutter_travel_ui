@@ -53,7 +53,7 @@ class HotelCarousel extends StatelessWidget {
                         height: 120.0,
                         width: 240.0,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Theme.of(context).cardColor,
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Padding(
@@ -73,7 +73,7 @@ class HotelCarousel extends StatelessWidget {
                               Text(
                                 hotel.address,
                                 style: TextStyle(
-                                  color: Colors.grey,
+                                  color: Theme.of(context).secondaryHeaderColor,
                                 ),
                               ),
                               SizedBox(height: 2.0),
